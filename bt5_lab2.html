@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+</head>
+<body>
+	<h1></h1>
+    <table style="font-size: 18px">
+    	<tr>
+    		<th colspan="2" align="centre"><h1>Personal information </h1></th>
+    	</tr>
+        <tr>
+        	<td>Enter name*: </td>
+            <td><input type="text" name="name" id="name"></td>              
+        </tr>
+        <tr>
+            <td>Sex*:</td> 
+            <td>
+                <input type="radio" name="male" id="sexm">Male
+                <input type="radio" name="female" id="sexf">Female
+            </td>
+        </tr>
+
+        <tr>
+            <td>Enter email address*: </td>
+            <td>
+                <input type="email" name="email" id="email">
+            </td>              
+        </tr>
+
+        <tr>
+            <td>Enter birthday*: </td>
+            <td>
+            <input type="date" name="dob" id="dob" required>
+         	</td>
+    	</tr>
+
+        <tr>
+            <td>Enter street address*:</td>
+            <td>
+                <input type="text" name="add" id="add" required>
+             </td>
+        </tr>
+
+        <tr>
+            <td>Enter city*: </td>
+            <td>
+                <input type="text" name="city" id="city" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Region*: </td>
+            <td>
+                <select name="region" id="region">
+                	<option value=""></option>
+                    <option value="vn">Vietnam</option>
+                    <option value="us">United State</option>
+                    <option value="jp">Japan</option>
+                    <option value="uk">United Kingdom</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Enter 5-digit zip code*: </td>
+            <td>
+                <input type="text" name="zip" id="zip" maxlength="5" required>
+            </td>                
+        </tr>
+            
+        <tr >
+           	<td align="right">
+                <button id="finished" type="submit" onclick="checktext()">Finished</button>                    
+            </td>
+            <td>    
+                <button id="clear" onclick="cleartext()">Clear</button>
+            </td>
+            
+        </tr>       
+    </table>       
+    <h1 id="no">gfrfg</h1>     
+    <script src="bt5_lab2.js"></script>
+</body>
+</html>
